@@ -25,8 +25,8 @@ public class Main {
 //        battle.go();
 
 
-        int numberAlly = 3;
-        int numberFoe = 4;
+        int numberAlly = 5;
+        int numberFoe = 10;
 
 
         Pokemon pokeMassive1[] = new Pokemon[6];
@@ -38,11 +38,13 @@ public class Main {
         pokeMassive1[5] = eelektross;
 
         Random rand = new Random();
+
         for (int i = 0; i < numberAlly; i++) {
             int checkNumber;
             checkNumber = rand.nextInt(0, pokeMassive1.length);
             battle.addAlly(pokeMassive1[checkNumber]);
         }
+
         for (int i = 0; i < numberFoe; i++) {
             int checkNumber;
             checkNumber = rand.nextInt(0, pokeMassive1.length);
