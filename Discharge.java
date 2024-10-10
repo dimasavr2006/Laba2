@@ -4,9 +4,11 @@ import ru.ifmo.se.pokemon.SpecialMove;
 import ru.ifmo.se.pokemon.Type;
 
 public class Discharge extends SpecialMove {
-    public Discharge(Type type, int pow, double acc) {
+    public Discharge(Type type, double pow, double acc) {
         super(type, pow, acc);
     }
+
+    // IMPOSSIBLE AGAIN, BRUH
 
     @Override
     protected void applyOppEffects(Pokemon pokemon) {

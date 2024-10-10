@@ -6,7 +6,7 @@ import ru.ifmo.se.pokemon.Type;
 import java.lang.Math;
 
 public class Spark extends PhysicalMove {
-    public Spark(Type type, int pow, double acc) {
+    public Spark(Type type, double pow, double acc) {
         super(type, pow, acc);
     }
 
