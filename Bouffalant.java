@@ -1,8 +1,10 @@
 import ru.ifmo.se.pokemon.Move;
+import ru.ifmo.se.pokemon.PhysicalMove;
 import ru.ifmo.se.pokemon.Pokemon;
+import ru.ifmo.se.pokemon.Type;
+import java.util.Random;
 
-public class Bouffalant{
-    public Pokemon Bouffalant = new Pokemon("Bouffalant", 10);
+public class Bouffalant extends Pokemon {
 
     double hp = 95;
     double att = 110;
@@ -10,17 +12,17 @@ public class Bouffalant{
     double spAtt = 40;
     double spDef = 95;
     double speed = 55;
+    Type type = Type.NORMAL;
 
-    public final void setStats(double hp,
-                               double att,
-                               double def,
-                               double spAtt,
-                               double spDef,
-                               double speed){
-        setStats(hp,att,def,spAtt,spDef,speed);
-    }
+    public Bouffalant(String name, int level) {
+        super(name, level);
+        Random random = new Random();
+        setStats(hp, att, def, spAtt, spDef, speed);
+        setType(Type.NORMAL);
+        addMove(new FuryAttack(Type.NORMAL, 15, 0.85, 0, random.nextInt(2, 5)));
+        addMove(new IronHead(Type.STEEL, 80, 1));
+        addMove(new FocusEnergy(type, 0, 1));
+        addMove(new AerialAce(Type.FLYING, 60, 1));
 
-    protected final void setMove(Move move){
-        
     }
 }

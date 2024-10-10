@@ -1,7 +1,8 @@
+import ru.ifmo.se.pokemon.Move;
+import ru.ifmo.se.pokemon.PhysicalMove;
 import ru.ifmo.se.pokemon.Pokemon;
-
-public class Eelektross {
-    public Pokemon Eelektross = new Pokemon("Eelektross", 10);
+import ru.ifmo.se.pokemon.Type;
+public class Eelektross extends Eelektrik {
 
     double hp = 85;
     double att = 115;
@@ -10,12 +11,9 @@ public class Eelektross {
     double spDef = 80;
     double speed = 50;
 
-    public final void setStats(double hp,
-                               double att,
-                               double def,
-                               double spAtt,
-                               double spDef,
-                               double speed){
-        setStats(hp,att,def,spAtt,spDef,speed);
+    public Eelektross(String name, int level) {
+        super(name, level);
+        setStats(hp, att, def, spAtt, spDef, speed);
+        addMove(new Discharge(Type.ELECTRIC, 80, 1));
     }
 }

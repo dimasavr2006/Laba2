@@ -1,7 +1,8 @@
+import ru.ifmo.se.pokemon.Move;
+import ru.ifmo.se.pokemon.PhysicalMove;
 import ru.ifmo.se.pokemon.Pokemon;
-
-public class Xatu {
-    public Pokemon Xatu = new Pokemon("Xatu", 10);
+import ru.ifmo.se.pokemon.Type;
+public class Xatu extends Natu{
 
     double hp = 65;
     double att = 75;
@@ -10,12 +11,9 @@ public class Xatu {
     double spDef = 70;
     double speed = 95;
 
-    public final void setStats(double hp,
-                               double att,
-                               double def,
-                               double spAtt,
-                               double spDef,
-                               double speed){
-        setStats(hp,att,def,spAtt,spDef,speed);
+    public Xatu(String name, int level){
+        super(name, level);
+        setStats(hp, att, def, spAtt, spDef, speed);
+        addMove(new AirSlash(Type.FLYING, 0, 0.95));
     }
 }

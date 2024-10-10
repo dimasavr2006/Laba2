@@ -1,7 +1,9 @@
+import ru.ifmo.se.pokemon.Move;
+import ru.ifmo.se.pokemon.PhysicalMove;
 import ru.ifmo.se.pokemon.Pokemon;
+import ru.ifmo.se.pokemon.Type;
 
-public class Tynamo {
-    public Pokemon Tynamo = new Pokemon("Tynamo", 10);
+public class Tynamo extends Pokemon {
 
     double hp = 35;
     double att = 55;
@@ -9,13 +11,13 @@ public class Tynamo {
     double spAtt = 45;
     double spDef = 40;
     double speed = 60;
+    Type type0 = Type.ELECTRIC;
 
-    public final void setStats(double hp,
-                               double att,
-                               double def,
-                               double spAtt,
-                               double spDef,
-                               double speed){
-        setStats(hp,att,def,spAtt,spDef,speed);
+    public Tynamo(String name, int level) {
+        super(name, level);
+        setStats(hp, att, def, spAtt, spDef, speed);
+        setType(type0);
+        addMove(new ThunderWave(Type.ELECTRIC, 0, 0.9));
+        addMove(new ChargeBeam(Type.ELECTRIC, 50, 0.9));
     }
 }
