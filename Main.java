@@ -23,8 +23,12 @@ public class Main {
 //        battle.addFoe(bouffalant);
 //        battle.addAlly(eelektross);
 //        battle.go();
+
+
         int numberAlly = 3;
         int numberFoe = 4;
+
+
         Pokemon pokeMassive1[] = new Pokemon[6];
         pokeMassive1[0] = bouffalant;
         pokeMassive1[1] = natu;
