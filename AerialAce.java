@@ -16,4 +16,6 @@ public class AerialAce extends PhysicalMove {
     protected String describe() {
         return "Попадает всегда";
     }
+
+
 }

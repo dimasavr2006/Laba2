@@ -1,6 +1,9 @@
 import ru.ifmo.se.pokemon.Battle;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
+import ru.ifmo.se.pokemon.Stat;
+
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Main {
@@ -26,7 +29,7 @@ public class Main {
 
 
         int numberAlly = 5;
-        int numberFoe = 10;
+        int numberFoe = 5;
 
 
         Pokemon pokeMassive1[] = new Pokemon[6];
@@ -37,19 +40,26 @@ public class Main {
         pokeMassive1[4] = eelektrik;
         pokeMassive1[5] = eelektross;
 
+        Pokemon pokeMassiveAlly[] = new Pokemon[numberAlly];
+        Pokemon pokeMassiveFoe[] = new Pokemon[numberFoe];
+
         Random rand = new Random();
 
         for (int i = 0; i < numberAlly; i++) {
-            int checkNumber;
-            checkNumber = rand.nextInt(0, pokeMassive1.length);
-            battle.addAlly(pokeMassive1[checkNumber]);
+            int checkNumber1;
+            checkNumber1 = rand.nextInt(0, pokeMassive1.length);
+            battle.addAlly(pokeMassive1[checkNumber1]);
+            pokeMassiveAlly[i] = pokeMassive1[checkNumber1];
         }
 
         for (int i = 0; i < numberFoe; i++) {
-            int checkNumber;
-            checkNumber = rand.nextInt(0, pokeMassive1.length);
-            battle.addFoe(pokeMassive1[checkNumber]);
+            int checkNumber2;
+            checkNumber2 = rand.nextInt(0, pokeMassive1.length);
+            battle.addFoe(pokeMassive1[checkNumber2]);
+            pokeMassiveFoe[i] = pokeMassive1[checkNumber2];
         }
         battle.go();
     }
+
+
 }
