@@ -14,7 +14,7 @@ public class Spark extends PhysicalMove {
     protected void applyOppEffects(Pokemon pokemon) {
         if (Math.random() < 0.3) {
             Effect.paralyze(pokemon);
-            System.out.println("Покемон парализован");
+            System.out.println("Покемон " + pokemon.toString() + " парализован");
         }
     }
 

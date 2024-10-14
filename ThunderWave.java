@@ -11,7 +11,7 @@ public class ThunderWave extends StatusMove {
     @Override
     protected void applyOppEffects(Pokemon pokemon) {
         Effect.paralyze(pokemon);
-        System.out.println("Противник парализован");
+        System.out.println("Противник " + pokemon.toString() + " парализован");
     }
 
     @Override

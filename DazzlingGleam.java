@@ -46,6 +46,8 @@ public class DazzlingGleam extends SpecialMove{
                 double speed = pokeAliveFoeArray[i].getStat(Stat.SPEED);
 
                 pokeAliveFoeArray[i].setStats(hp, att, def, spAtt, spDef, speed);
+
+                System.out.println(pokemon.toString() + " бьёт по " + pokeAliveFoeArray[i].toString());
         }
     }
 

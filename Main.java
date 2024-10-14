@@ -28,8 +28,8 @@ public class Main {
 //        battle.go();
 
 
-        int numberAlly = 5;
-        int numberFoe = 5;
+        int numberAlly = 10;
+        int numberFoe = 10;
 
 
         Pokemon pokeMassive1[] = new Pokemon[6];

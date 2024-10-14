@@ -13,7 +13,7 @@ public class AirSlash extends SpecialMove {
     protected void applyOppEffects(Pokemon pokemon) {
         if (Math.random() < 0.3){
             Effect.flinch(pokemon);
-            System.out.println("Противник оглушён!");
+            System.out.println("Противник " + pokemon.toString() + " оглушён!");
         }
     }
 

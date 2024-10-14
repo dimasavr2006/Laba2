@@ -15,7 +15,9 @@ public class Swagger extends StatusMove {
     protected void applySelfEffects(Pokemon pokemon) {
         pokemon.setMod(Stat.ATTACK, 2);
         Effect.confuse(pokemon);
-        System.out.println("Атака увеличили на 2, оконфузили");
+        System.out.println("Атака " + pokemon.toString() + " увеличена на 2, покемон оглушён");
+
+//        System.out.println("Атака увеличили на 2, оконфузили");
     }
 
     @Override

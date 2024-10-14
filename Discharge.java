@@ -26,7 +26,7 @@ public class Discharge extends SpecialMove {
 
         int counter = 0;
 
-        for (int i = 0; i < pokeMassiveFoe.length; i++){
+        for (int i = 1; i < pokeMassiveFoe.length; i++){
             if (pokeMassiveFoe[i].isAlive() == true){
                 pokeAliveFoeArray[counter] = pokeMassiveFoe[i];
                 counter++;
@@ -36,18 +36,22 @@ public class Discharge extends SpecialMove {
 
     protected void applyier(Pokemon pokeAliveFoeArray[]) {
         for (int i = 0; i < pokeAliveFoeArray.length; i++) {
-            applyOppEffects(pokeAliveFoeArray[i]);
+//            applyOppEffects(pokeAliveFoeArray[i]);
+            if (Math.random() < 0.3){
+                Effect.paralyze(pokeAliveFoeArray[i]);
+                System.out.println("Покемон " + pokeAliveFoeArray[i].toString() + " парализован");
+            }
         }
     }
 
 
-    @Override
-    protected void applyOppEffects(Pokemon pokemon) {
-        if (Math.random() < 0.3) {
-            Effect.paralyze(pokemon);
-            System.out.println("Покемон" + pokemon.toString() + "парализован");
-        }
-    }
+
+//    protected void applyOppEffects(Pokemon pokemon, Pokemon pokeAliveFoeArray[]) {
+//        if (Math.random() < 0.3) {
+//            Effect.paralyze(pokemon);
+//            System.out.println("Покемон" + pokeAliveFoeArray[i].toString() + "парализован");
+//        }
+//    }
 
     @Override
     protected String describe() {
