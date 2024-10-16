@@ -1,3 +1,6 @@
+package src.Pokemon;
+import src.Move.*;
+
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 import java.util.Random;

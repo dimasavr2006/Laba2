@@ -1,6 +1,6 @@
-import ru.ifmo.se.pokemon.Move;
-import ru.ifmo.se.pokemon.PhysicalMove;
-import ru.ifmo.se.pokemon.Pokemon;
+package src.Pokemon;
+import src.Move.*;
+
 import ru.ifmo.se.pokemon.Type;
 public class Eelektross extends Eelektrik {
 

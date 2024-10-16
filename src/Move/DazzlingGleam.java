@@ -1,3 +1,5 @@
+package src.Move;
+
 import ru.ifmo.se.pokemon.*;
 
 public class DazzlingGleam extends SpecialMove{
