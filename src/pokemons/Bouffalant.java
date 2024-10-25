@@ -1,18 +1,18 @@
-package src.Pokemon;
-import src.Move.*;
+package src.pokemons;
+import src.moves.*;
 
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 import java.util.Random;
 
-public class Bouffalant extends Pokemon {
+public final class Bouffalant extends Pokemon {
 
-    double hp = 95;
-    double att = 110;
-    double def = 95;
-    double spAtt = 40;
-    double spDef = 95;
-    double speed = 55;
+    protected double hp = 95;
+    protected double att = 110;
+    protected double def = 95;
+    protected double spAtt = 40;
+    protected double spDef = 95;
+    protected double speed = 55;
     Type type = Type.NORMAL;
 
     public Bouffalant(String name, int level) {

@@ -3,8 +3,9 @@ package src;
 import ru.ifmo.se.pokemon.Battle;
 import ru.ifmo.se.pokemon.Pokemon;
 
-import src.Pokemon.*;
-import src.*;
+
+
+import src.pokemons.*;
 
 import java.util.Random;
 

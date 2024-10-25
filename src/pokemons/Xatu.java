@@ -1,9 +1,6 @@
-package src.Pokemon;
-import src.Move.*;
+package src.pokemons;
+import src.moves.*;
 
-import ru.ifmo.se.pokemon.Move;
-import ru.ifmo.se.pokemon.PhysicalMove;
-import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 public class Xatu extends Natu{
 

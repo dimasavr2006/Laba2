@@ -1,4 +1,4 @@
-package src.Move;
+package src.moves;
 
 import ru.ifmo.se.pokemon.Effect;
 import ru.ifmo.se.pokemon.Pokemon;
@@ -48,9 +48,9 @@ public class Discharge extends SpecialMove {
 
 
 
-//    protected void applyOppEffects(Pokemon pokemon, Pokemon pokeAliveFoeArray[]) {
+//    protected void applyOppEffects(pokemons pokemons, pokemons pokeAliveFoeArray[]) {
 //        if (Math.random() < 0.3) {
-//            Effect.paralyze(pokemon);
+//            Effect.paralyze(pokemons);
 //            System.out.println("Покемон" + pokeAliveFoeArray[i].toString() + "парализован");
 //        }
 //    }
