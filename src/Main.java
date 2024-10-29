@@ -2,6 +2,7 @@ package src;
 
 import ru.ifmo.se.pokemon.Battle;
 import ru.ifmo.se.pokemon.Pokemon;
+import ru.ifmo.se.pokemon.Move;
 
 
 
@@ -31,8 +32,8 @@ public class Main {
 //        battle.go();
 
 
-        int numberAlly = 3;
-        int numberFoe = 3;
+        int numberAlly = 1;
+        int numberFoe = 1;
 
 
         Pokemon pokeMassive1[] = new Pokemon[6];
@@ -43,9 +44,7 @@ public class Main {
         pokeMassive1[4] = eelektrik;
         pokeMassive1[5] = eelektross;
 
-//        battle.addAlly(pokeMassive1[0]);
-//        battle.addFoe(pokeMassive1[5]);
-
+        
         Pokemon pokeMassiveAlly[] = new Pokemon[numberAlly];
         Pokemon pokeMassiveFoe[] = new Pokemon[numberFoe];
 
@@ -64,9 +63,14 @@ public class Main {
             battle.addFoe(pokeMassive1[checkNumber2]);
             pokeMassiveFoe[i] = pokeMassive1[checkNumber2];
         }
+
+//        pokeMassiveAlly[0] = pokeMassive1[3];
+//        pokeMassiveFoe[0] = pokeMassive1[3];
+//
+//        battle.addAlly(pokeMassiveAlly[0]);
+//        battle.addFoe(pokeMassiveFoe[0]);
+
         battle.go();
+        
     }
-    
-
-
 }

@@ -8,6 +8,7 @@ import ru.ifmo.se.pokemon.Type;
 public class ThunderWave extends StatusMove {
     public ThunderWave(Type type, double pow, double acc) {
         super(type, pow, acc);
+
     }
 
     @Override
@@ -20,6 +21,5 @@ public class ThunderWave extends StatusMove {
     protected String describe() {
         return "Парализует противника";
     }
-
 
 }
