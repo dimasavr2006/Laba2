@@ -5,8 +5,8 @@ import ru.ifmo.se.pokemon.*;
 import java.lang.Math;
 
 public class ChargeBeam extends SpecialMove {
-    public ChargeBeam(Type type, double pow, double acc) {
-        super(type, pow, acc);
+    public ChargeBeam(Type type, double power, double accuracy) {
+        super(type, power, accuracy);
     }
 
     @Override

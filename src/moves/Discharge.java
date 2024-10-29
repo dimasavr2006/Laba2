@@ -6,8 +6,8 @@ import ru.ifmo.se.pokemon.SpecialMove;
 import ru.ifmo.se.pokemon.Type;
 
 public class Discharge extends SpecialMove {
-    public Discharge(Type type, double pow, double acc) {
-        super(type, pow, acc);
+    public Discharge(Type type, double power, double accuracy) {
+        super(type, power, accuracy);
     }
 
     // IMPOSSIBLE AGAIN, BRUH

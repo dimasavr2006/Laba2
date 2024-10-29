@@ -5,8 +5,8 @@ import ru.ifmo.se.pokemon.StatusMove;
 import ru.ifmo.se.pokemon.Type;
 
 public class FocusEnergy extends StatusMove{
-    public FocusEnergy (Type type, double pow, double acc){
-        super(type, pow, acc);
+    public FocusEnergy (Type type, double power, double accuracy){
+        super(type, power, accuracy);
     }
 
 //    @Override

@@ -5,8 +5,8 @@ import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 
 public class AerialAce extends PhysicalMove {
-    public AerialAce (Type type, double pow, double acc){
-        super(type, pow, acc);
+    public AerialAce (Type type, double power, double acc){
+        super(type, power, acc);
     }
 
     @Override

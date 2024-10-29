@@ -6,8 +6,8 @@ import ru.ifmo.se.pokemon.Type;
 import ru.ifmo.se.pokemon.Effect;
 
 public class IronHead extends PhysicalMove{
-    public IronHead (Type type, double pow, double acc){
-        super(type, pow, acc);
+    public IronHead (Type type, double power, double accuracy){
+        super(type, power, accuracy);
     }
 
     @Override

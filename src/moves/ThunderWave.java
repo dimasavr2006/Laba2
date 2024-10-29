@@ -6,8 +6,8 @@ import ru.ifmo.se.pokemon.StatusMove;
 import ru.ifmo.se.pokemon.Type;
 
 public class ThunderWave extends StatusMove {
-    public ThunderWave(Type type, double pow, double acc) {
-        super(type, pow, acc);
+    public ThunderWave(Type type, double power, double accuracy) {
+        super(type, power, accuracy);
 
     }
 

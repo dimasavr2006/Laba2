@@ -71,6 +71,7 @@ public class Main {
 //        battle.addFoe(pokeMassiveFoe[0]);
 
         battle.go();
-        
+
+
     }
 }

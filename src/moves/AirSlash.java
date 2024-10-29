@@ -7,8 +7,8 @@ import ru.ifmo.se.pokemon.Type;
 import java.lang.Math;
 
 public class AirSlash extends SpecialMove {
-    public AirSlash(Type type, double pow, double acc) {
-        super(type, pow, acc);
+    public AirSlash(Type type, double power, double accuracy) {
+        super(type, power, accuracy);
     }
 
     @Override
