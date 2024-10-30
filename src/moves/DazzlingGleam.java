@@ -14,7 +14,8 @@ public class DazzlingGleam extends SpecialMove{
         for (int i = 0; i < pokeMassiveFoe.length; i++){
             if (pokeMassiveFoe[i].isAlive() == true){
                 len1++;
-            } else if (pokeMassiveFoe[i].isAlive() == false) {
+            }
+            else if (pokeMassiveFoe[i].isAlive() == false) {
                 continue;
             }
         }
@@ -52,9 +53,6 @@ public class DazzlingGleam extends SpecialMove{
                 System.out.println(pokemon.toString() + " бьёт по " + pokeAliveFoeArray[i].toString());
         }
     }
-
-    // ATTACK ALL, BUT IT'S IMPOSSIBLE
-
 
     @Override
     protected String describe() {

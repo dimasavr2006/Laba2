@@ -19,7 +19,8 @@ public class Discharge extends SpecialMove {
         for (int i = 0; i < pokeMassiveFoe.length; i++){
             if (pokeMassiveFoe[i].isAlive() == true){
                 len1++;
-            } else if (pokeMassiveFoe[i].isAlive() == false) {
+            }
+            else if (pokeMassiveFoe[i].isAlive() == false) {
                 continue;
             }
         }

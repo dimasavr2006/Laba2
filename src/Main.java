@@ -2,12 +2,10 @@ package src;
 
 import ru.ifmo.se.pokemon.Battle;
 import ru.ifmo.se.pokemon.Pokemon;
-import ru.ifmo.se.pokemon.Move;
 
 
 
 import src.pokemons.*;
-
 import java.util.Random;
 
 public class Main {
@@ -32,8 +30,8 @@ public class Main {
 //        battle.go();
 
 
-        int numberAlly = 1;
-        int numberFoe = 1;
+        int numberAlly = 3;
+        int numberFoe = 3;
 
 
         Pokemon pokeMassive1[] = new Pokemon[6];
@@ -71,7 +69,6 @@ public class Main {
 //        battle.addFoe(pokeMassiveFoe[0]);
 
         battle.go();
-
 
     }
 }
